@@ -1,11 +1,27 @@
 import React, {useEffect} from 'react'
 import Product from './Product' 
-//import CurrencyAPI from '@everapi/ipbase-js';
+import jQuery from 'jquery';
 const Home = () => {
 
-    //useEffect(() => {
-        
-//}, [])
+    useEffect(() => {
+        const $ = window.$;
+        // set endpoint and your access key
+    var ip = '134.201.250.155'
+    var access_key = '00e1a9f6c6cd355bef0227f65e14ef8b';
+
+    // get the API result via jQuery.ajax
+    jQuery(function($) {
+        $.ajax({
+            url: 'https://api.ipstack.com/' + ip + '?access_key=' + access_key,
+            dataType: 'jsonp',
+            success: function(json) {
+    
+                alert(json);
+    
+            }
+        });
+    });
+}, [])
     return (
         <div>
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
