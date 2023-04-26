@@ -3,14 +3,9 @@ import Product from './Product'
 //import CurrencyAPI from '@everapi/ipbase-js';
 const Home = () => {
 
-    useEffect(() => {
-        async function getResponse() {
-            const request = await fetch("https://ipinfo.io/json?token=8cfd73350b882c")
-const jsonResponse = await request.json()
-
-console.log(jsonResponse.ip, jsonResponse.country)
-        }
-}, [])
+    //useEffect(() => {
+        
+//}, [])
     return (
         <div>
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
