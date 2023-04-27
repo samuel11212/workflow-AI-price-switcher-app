@@ -1,10 +1,12 @@
-import React, {useEffect} from 'react'
+//import React, {useEffect} from 'react'
+import React from 'react'
 import Product from './Product' 
-import jQuery from 'jquery';
+//import jQuery from './jquery's
 const Home = () => {
 
+    /*
     useEffect(() => {
-        const $ = window.$;
+        //const $ = window.$;
         // set endpoint and your access key
     var ip = '134.201.250.155'
     var access_key = '00e1a9f6c6cd355bef0227f65e14ef8b';
@@ -22,8 +24,16 @@ const Home = () => {
         });
     });
 }, [])
+*/
     return (
         <div>
+            <p style={{padding: "80px",
+      fontFamily: "Arial",fontSize: '25px'}}>
+        Pricing for WorkFlowAI:
+            Workflow AI is closer to you than you imagine !! Fix your
+            price and pay monthly, you can fix any amount Enjoy all Workflow AI features 
+            irrespective of what you pay
+            </p>
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
